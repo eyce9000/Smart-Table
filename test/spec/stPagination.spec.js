@@ -24,7 +24,7 @@ describe('stPagination directive', function () {
   var compile;
 
   function getPages() {
-    return Array.prototype.map.call(element.find('LI'), function (val) {
+    return Array.prototype.map.call(element.find('LI').slice(2,-2), function (val) {
       return angular.element(val);
     });
   }
